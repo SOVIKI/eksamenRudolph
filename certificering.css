@@ -1,0 +1,313 @@
+/* ----- TILBAGE KNAP ------ */
+.back_link {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    height: 1rem;
+}
+
+.headline {
+    text-align: center;
+}
+
+.editorial {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.quality_flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 10px auto 60px;
+}
+
+.solserie_card {
+    text-align: center;
+    padding: 15px;
+    background-color: #F3F0E3;
+    max-width: 185%;
+    margin-top: 10%;
+
+}
+
+.solserie_heading {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.svane_img {
+    max-width: 100%;
+    float: left;
+}
+
+.editorial_link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.front_p {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.svaneliste {
+    display: inline-block;
+    border-bottom: 0;
+}
+
+.sm_liste {
+    text-align: left;
+    margin-top: -15px;
+    font-size: 18px;
+}
+
+/* ----- bæredygtighed  */
+.baeredygtig_card {
+    text-align: left;
+    padding: 15px;
+    background-color: #658b64ab;
+    max-width: 185%;
+
+
+}
+
+.baeredygtig_heading {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.baeredygtig_img {
+    max-width: 100%;
+    float: right;
+}
+
+.baeredygtig_link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.front_t {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ----- COSMOS ------ */
+.cosmos_card {
+    text-align: left;
+    padding: 15px;
+    background-color: #e9dfb6a0;
+    max-width: 185%;
+    margin-top: 10%;
+}
+
+.cosmos_img {
+    float: right;
+    max-width: 250px;
+    ;
+}
+
+.cosmos_heading {
+    text-align: left;
+
+}
+
+.cosmos_p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ----- AllergyCertified ------ */
+.allCertified_card {
+    text-align: right;
+    padding: 5px;
+    background-color: #F3F0E3;
+    max-width: 185%;
+    margin-top: 10%;
+}
+
+.ac_img {
+    float: left;
+    width: 100%;
+}
+
+.ac_liste {
+    display: inline-block;
+
+}
+
+.ac_p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.laesmere {
+    text-align: center;
+}
+
+/* ----- Asthma-Allergy Nordic ------ */
+.aan_card {
+    text-align: left;
+    padding: 5px;
+    background-color: #e9dfb6a0;
+    max-width: 185%;
+    margin-top: 10%;
+}
+
+.aan_img {
+    float: right;
+    width: 100%;
+}
+
+.aan_p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ----- VEGAN ------ */
+
+.vegan_card {
+    text-align: right;
+    padding: 5px;
+    background-color: #F3F0E3;
+    max-width: 185%;
+    margin-top: 10%;
+
+}
+
+.vegan_img {
+    float: left;
+    width: 100%;
+}
+
+/* ----- GOTS ----- */
+.GOTS_card {
+    text-align: left;
+    padding: 5px;
+    background-color: #e9dfb6a0;
+    max-width: 185%;
+    margin-top: 10%;
+}
+.GOTS_img {
+    float: right;
+    width: 100%;
+    margin-bottom: 10%;
+}
+/* ------ B CORP  ------*/
+.B_CORP_card{
+    text-align: right;
+    padding: 5px;
+    background-color: #F3F0E3;
+    max-width: 185%;
+    margin-top: 10%;
+
+}
+.bcorp_img {
+    float: right;
+    width: 100%;
+}
+
+/*=============================================================================================
+    =========================================   TABLET   ==========================================
+    =============================================================================================*/
+
+@media screen and (min-width: 900px) {
+    .tilbage {
+        margin-top: 20px;
+    }
+
+
+    /* ----- svanemærket ----- */
+    .svaneliste {
+        display: inline-block;
+        border-bottom: 0;
+        margin-left: 320px;
+    }
+
+    .sm_liste {
+        text-align: left;
+        margin-top: -154px;
+        font-size: 18px;
+    }
+
+    .svane_img {
+        max-width: 40%;
+
+        float: left;
+    }
+
+
+    .baeredygtig_img {
+        max-width: 40%;
+        float: right;
+    }
+
+
+    .ac_img {
+        float: left;
+        width: 25%;
+    }
+
+    .allCertified_card {
+        text-align: right;
+        padding: 5px;
+        background-color: #F3F0E3;
+        width: 100%;
+    }
+
+    .aan_img {
+        float: right;
+        width: 25%;
+    }
+
+    .vegan_img {
+        float: left;
+        width: 25%;
+    }
+
+    .GOTS_img {
+        float: right;
+        width: 25%;
+        margin-bottom: 10%;
+    }
+    .front_GOTS {
+        padding: 7px;
+    }
+
+    .bcorp_img {
+        float: right;
+        width: 30%;
+        margin: 2%;
+    }
+
+
+    /* CARDS */
+
+    .aan_card .cosmos_card .solserie_card .allCertified_card .baeredygtig_card {
+        margin: 2%;
+    }
+
+
+
+
+
+}
+
+
+
+
+/*=============================================================================================
+        ========================================   COMPUTER   =========================================
+        =============================================================================================*/
+
+@media screen and (min-width: 1200px) {}

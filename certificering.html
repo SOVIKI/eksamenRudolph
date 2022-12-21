@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/certificering.css">
+    <title> Bæredygtighed - Certificering | Rudolph Care </title>
+
+    <!-- Tab ikon -->
+    <link rel="icon" type="image/x-icon" href="img/tab_ikon.png">
+
+    <!-- Fonte og ikoner (findes på google: google material icon) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66a5a04b45.js" crossorigin="anonymous"></script>
+</head>
+
+
+<!---BODY-->
+
+<body>
+
+
+    <!--- BURGERMENU https://alvarotrigo.com/blog/hamburger-menu-css/ (nr. 11)-->
+    <header>
+        <!---Burger streger-->
+
+        <nav class="burgermenu">
+            <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+            <label class="m-menu__toggle" for="menu">
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="butt"
+                    stroke-linejoin="arcs">
+                    <line x1="2" y1="12" x2="21" y2="12"></line>
+                    <line x1="2" y1="6" x2="21" y2="6"></line>
+                </svg>
+            </label>
+            <label class="m-menu__overlay" for="menu"></label>
+
+            <!--- header til pc -->
+
+            <div class="nav_item">
+                <p class="navbar1">
+                    <a href="#">Shop</a>
+                    <a href="#">Om</a>
+                    <a href="#">Bæredygtighed</a>
+                    <a href="#">The Care Journal</a>
+                </p>
+            </div>
+
+            <!---google ikoner i navbar-->
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="logo" class="logo"></a>
+
+            <div class="nav_ikoner">
+                <i class="material-icons" id="ikon_search">search</i>
+                <i class="material-icons" id="ikon_favorite">favorite</i>
+                <i class="material-icons" id="ikon_shoppingbag">shopping_bag</i>
+            </div>
+
+
+            <!--- Kryds i menu -->
+            <div class="m-menu">
+                <div class="m-menu__header">
+                    <label class="m-menu__toggle" for="menu">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                            stroke-linecap="butt" stroke-linejoin="arcs">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </label>
+                    <span></span>
+                </div>
+
+
+
+
+                <!---SEKTION 1-->
+                <ul>
+                    <li>
+                        <label class="a-label__chevron" for="item-1">Ansigt</label>
+                        <input type="checkbox" id="item-1" name="item-1" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-1">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span>Ansigt</span>
+                            </div>
+                            <ul>
+                                <li><label>Lotion</label></li>
+                                <li>
+                                    <label><a href="#" id="a_menu">Sticks</a></label>
+                                </li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+
+
+                    <!--- SEKTION 2 -->
+
+                    <li>
+                        <label class="a-label__chevron" for="item-2">Kroppen</label>
+                        <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-2">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span>Kroppen</span>
+                            </div>
+                            <ul>
+
+                                <li><label>Lotion</label></li>
+                                <li><label>Olie</label></li>
+                                <li><label>Sets</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!--- SEKTION 3-->
+                    <li>
+                        <label class="a-label__chevron" for="item-3">Til børn & gravide</label>
+                        <input type="checkbox" id="item-3" name="item-3" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-3">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span>Til børn & gravide</span>
+                            </div>
+                            <ul>
+                                <li><label>Lotion</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <!--- SEKTION 4-->
+                    <li>
+                        <label class="a-label__chevron" for="item-4">Til ham</label>
+                        <input type="checkbox" id="item-4" name="item-4" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-4">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span> Til ham </span> <!-- HJÆLP -->
+                                <!-- Lav om til at have en Alle knap i stedet for kategoti href -->
+                            </div>
+                            <ul>
+                                <li><label>Lotion</label></li>
+                                <li><label>Olie</label></li>
+                                <li><label>Vidste du ...</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <!--- SEKTION 5 -->
+                    <li>
+                        <label class="a-label__chevron" for="item-5">Aftersun</label>
+                        <input type="checkbox" id="item-5" name="item-5" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-5">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span> Aftersun</span>
+                            </div>
+                            <ul>
+                                <li><label>Aftersun Shimmer Sorbert</label></li>
+                                <li><label>Aftersun Soothing Sorbert</label></li>
+                                <li><label>Repair Spray Aftersun</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+
+
+                    <!---  SEKTION 6 -->
+                    <li>
+                        <label class="a-label__chevron" for="item-6">Accessories</label>
+                        <input type="checkbox" id="item-6" name="item-6" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-6">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span> Accessories</span>
+                            </div>
+                            <ul>
+                                <li><label>Håndklæde</label></li>
+                                <li><label>Sandaler</label></li>
+                                <li><label>Tasker</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!--- SEKTION 7 -->
+                    <li>
+                        <label class="a-label__chevron" for="item-7">Om solserien</label>
+                        <input type="checkbox" id="item-7" name="item-7" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-6">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span> Som solserien</span>
+                            </div>
+                            <ul>
+                                <li><label> <a href="solserien.html" id="a_menu"> Om solserien </a></label></li>
+                                <li><label>Bæredygdighed - Certificeringer</label></li>
+                                <li><label>FAQ</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="border"></div>
+
+        <!--- BURGER MENU FÆRDIG  -->
+
+
+        <!---DROPDOWN MENU (https://www.w3schools.com/howto/howto_css_dropdown.asp)-->
+
+        <nav class="menu_bar" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+            <!--- Menu items -->
+            <div class="menu_items">
+
+                <div class="dropdown">
+                    <form action="#" class="menu_item"><button class="dropbutton">Ansigt</button></form>
+                    <div class="drop_punkter">
+                        <a href="#">Lotion</a>
+                        <a href="#">Sticks</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <form action="#" class="menu_item"><button class="dropbutton">Kroppen</button></form>
+                    <div class="drop_punkter">
+                        <a href="#">Lotion</a>
+                        <a href="#">Olie</a>
+                        <a href="#">Sets</a>
+                    </div>
+                </div>
+
+                <div class="dropdown dropdown_ekstra_bue">
+                    <form action="#" class="menu_item"><button class="dropbutton">Til børn & gravide</button></form>
+                    <div class="drop_punkter">
+                        <a href="#">Lotion</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <form action="kategori.html" class="menu_item"><button class="dropbutton">Til ham </button></form>
+                    <div class="drop_punkter">
+                        <a href="#">Lotion</a>
+                        <a href="#">Olie</a>
+                        <a href="#">Vidste du...</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <form action="#" class="menu_item dropdown_ekstra_bue"><button class="dropbutton">Aftersun</button>
+                    </form>
+                    <div class="drop_punkter">
+                        <a href="#">Aftersun Shimmer Sorbert</a>
+                        <a href="#">Aftersun Soothing Sorbert</a>
+                        <a href="#">Repair Spray Aftersun</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <form action="#" class="menu_item"><button class="dropbutton">Accessories</button></form>
+                    <div class="drop_punkter">
+                        <a href="#">Håndklæde</a>
+                        <a href="#">Sandaler</a>
+                        <a href="#">Tasker</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <form action="solserien.html" class="menu_item"><button class="dropbutton">Om solserien</button>
+                    </form>
+                    <div class="drop_punkter">
+                        <a href="#">Solserien</a>
+                        <a href="certificering.html">Bæredygdighed - Certificeringer</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!--- TILBAGE LINK  -->
+    <div class="tilbage">
+        <a href="solserien.html" class="back_link">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+
+    <h1 class="headline"> Bæredygtighed - Certificering</h1>
+
+    <main>
+
+        <section class="editorial">
+            <div class="quality_flexbox">
+                <div class="B_CORP_card">
+                    <a href="#" class="editorial_link">
+                        <img src="img/bcorp.png" alt="B Corp" class="bcorp_img">
+                        <h1 class="cosmos_heading"> Om B Corp </h1>
+                        <p class="front_p front_GOTS">
+                            I 2021 fik vi virksomhedscertificeringen B Corp. Den er vi stolte af. Rudolph Care blev
+                            grundlagt ud fra et ønske om at fremme bæredygtighed i skønhedsbranchen og at bidrage til
+                            positiv forandring i verden. Vores B Corp-certificering er et vigtigt strategisk værktøj til
+                            det formål.
+                            <br>
+                            <br>
+
+                            For at blive godkendt som B Corp-virksomhed bliver man som ansøger målt på en lang række
+                            parametre, der vurderer virksomhedens indsats fra inderst til yderst.
+                            <br> Alle certificerede B Corps har det som erklæret mål at leve op til meget høje
+                            standarder over for både individ og
+                            samfund. Uanset hvad man beskæftiger sig med, vil man som B Corp-virksomhed ikke kun være
+                            den bedste i verden, men også for verden.
+                            <br>
+                            <br>
+
+                            B Corps gør mere end bare at lægge planer vi handler aktivt for selv at være den
+                            forandring, vi ønsker at se i verden.
+                            Det betyder, at vi stiller skrappe krav om klimahensyn og ordentlige arbejdsforhold til alle
+                            vores leverandører og vægter relaterede miljø- og
+                            sundhedscertificeringer.
+                            <br>
+                            <br>
+
+                            Vi er ekstremt opmærksomme på at skabe sunde medarbejderforhold, som tilgodeser både
+                            individet og teamet. Vi engagerer os i sociale projekter og udviklingsprojekter, både i
+                            Danmark og i de lande, hvorfra vi henter vores råvarer. <br>
+                            Sammen med andre dedikerede B Corps
+                            har Rudolph Care en platform med ligesindede, som i fællesskab og hver for sig gør en
+                            indsats for at løse verdens sociale og miljømæssige problemer og som lærer af hinanden.
+                            <br>
+                            Formålet er løbende at kunne måle og styrke vores gennemslagskraft på alle områder. B
+                            Corp-certificeringen gør på den måde Rudolph Care endnu mere troværdig for forbrugeren og
+                            endnu mere interessant som potentiel arbejdsplads og samarbejdspartner.
+                            <br>
+                            <br>
+
+                            I 2022 har 26 B Corp-virksomheder, inklusiv Rudolph Care, dannet sammenslutningen B Beauty
+                            Coalition, hvor et internationalt fællesskab af ligesindede B Corps i skønhedsindustrien kan
+                            samles, dele viden og drive projekter sammen med formålet at mindske vores miljømæssige
+                            aftryk.
+
+                            
+                        </p>
+                     <p class="laesmere">Læs mere om B Beauty Coalition her.</p>
+                        <!-- KILDE: https://www.rudolphcare.com/da/baeredygtighed/certificeringer/  -->
+                    </a>
+                </div>
+
+                <div class="GOTS_card">
+                    <a href="#" class="editorial_link">
+                        <img src="img/GOTS.png" alt="GOTS" class="GOTS_img">
+                        <h1 class="cosmos_heading"> Om GOTS </h1>
+                        <p class="front_p front_GOTS">
+                            GOTS (Global Organic Textile Standard) er en internationalt anerkendt standard for
+                            økologiske fibre, der omfatter uafhængig certificering af hele forsyningskæden.
+                            <br>
+                            Med andre ord er GOTS din garanti for, at et stykke tekstil er skabt under ordentlige
+                            arbejdsforhold,
+                            er fri for skadelige kemikalier og er økologisk produceret fra høst til færdigt klæde.
+                            <br>
+                            Flere Rudolph Care tekstiler bærer certificeringen. GOTS er vigtig for Rudolph Care, fordi
+                            vi ønsker at vores visioner og ambitionsniveau fra vores primære skønheds- og
+                            hudplejeprodukter afspejler sig i de øvrige accessories, vi producerer til vores univers
+                            og det opnår vi med GOTS.
+                            <br> Når vi producerer stofposer, produceres de af enten 100%
+                            genanvendt tekstil eller GOTS-certificeret tekstil.
+                            <br>
+                            Du vil derfor også finde et GOTS-mærke i flere varianter af vores stofposer.
+                        </p>
+
+                        <p class="laesmere">Læs mere om GOTS her: www.global-standard.org</p>
+
+                        <!-- KILDE: https://www.rudolphcare.com/da/baeredygtighed/certificeringer/  -->
+
+                    </a>
+                </div>
+
+                <div class="vegan_card">
+                    <a href="#" class="editorial_link">
+                        <img src="img/vegan.png" alt="Vegan" class="vegan_img">
+                        <h1 class="cosmos_heading"> Om Vegan Trademark </h1>
+                        <p class="front_p front_GOTS">
+                            Langt de fleste Rudolph Care produkter bærer den veganske certificering Vegan Trademark,
+                            undtaget enkelte produkter, som indeholder naturlig bivoks, honning, pullulan (skabt med
+                            hjælp fra enzymer, som stammer fra mælk og æg) og lanolin og/eller karmin.
+                            <br>
+                            Vi er meget bevidste omkring brugen af disse ingredienser. Vi bruger udelukkende økologisk
+                            certificeret honningekstrakt og bivoks som sikrer, at vi kun får ingredienser fra glade
+                            bier, som har det godt.
+                            <br> bruger kun lanolin, som udelukkende er et biprodukt fra
+                            uldproduktion, og ingrediensen karmin, som farver vores Marie-lipgloss, er naturligt
+                            udvundet og fødevaregodkendt, ligesom alle andre ingredienser i vores læbeprodukter.
+                            <br>
+                            Derudover er det, og har altid været, naturligvis en selvfølge, at vi ikke tester vores
+                            produkter på dyr.
+                            <br>
+                            Faktisk tester vi den med glæde på os selv.
+
+                            <!-- KILDE: https://www.rudolphcare.com/da/baeredygtighed/certificeringer/  -->
+
+                    </a>
+                </div>
+
+
+
+                <div class="aan_card">
+                    <a href="#" class="editorial_link">
+                        <img src="img/aan.png" alt="Asthma-Allergy Nordic" class="aan_img">
+                        <h1 class="cosmos_heading"> Om Asthma-Allergy Nordic </h1>
+                        <p class="front_p front_GOTS">
+                            Asthma-Allergy Nordic mærket, også kaldet ”den blå krans”, gør det nemt at undgå
+                            unødvendig kemi og minimere risiko for allergiske reaktioner og udvikling af allergi.
+                            <br> Du finder certificeringen på vores dele-produkt til mor og baby, Mommy & Me.
+
+                            <ul class="aan_liste">
+                                <li class="aan_p">Der indgår ikke stoffer, der hyppigst fremkalder allergi, i mærkede
+                                    produkter.</li>
+                                <br>
+                                <li class="aan_p"> Der anvendes ikke parfume, MI og formaldehyd i mærkede produkter.
+                                </li>
+                            </ul>
+                            <br>
+                            <p class="laesmere">Læs mere om Asthma Allergy Nordic på www.astma-allergi.dk</p>
+                        </p>
+                        <!-- KILDE: https://www.rudolphcare.com/da/baeredygtighed/certificeringer/  -->
+
+                    </a>
+                </div>
+
+
+
+
+                <div class="allCertified_card">
+                    <a href="#" class="editorial_link">
+                        <img src="img/AC.png" alt="AllergyCertified" class="ac_img">
+                        <h1 class="cosmos_heading"> Om AllergyCertified </h1>
+                        <p class="front_p">
+                            Lip Balm Kit, Kids Sun Lotion og Mommy & Me er certificerede med det internationale
+                            allergimærke AllergyCertified.
+
+                            <ul class="ac_liste">
+                                <li class="ac_p">Der ikke er kendte allergener eller allergifremkaldende
+                                    konserveringsmidler i produkterne.</li>
+                                <br>
+                                <li class="ac_p">Hver enkel ingrediens er vurderet af en toksikolog.</li>
+                                <br>
+                                <li class="ac_p">Produkterne er 100 % parfumefri.</li>
+                            </ul>
+                            <br>
+                            <p class="laesmere"> Læs mere om AllergyCertified på www.allergycertified.com</p>
+                        </p>
+                        <!-- KILDE: https://www.rudolphcare.com/da/baeredygtighed/certificeringer/  -->
+
+                    </a>
+                </div>
+
+
+
+
+
+                <div class="cosmos_card">
+                    <a href="#" class="editorial_link">
+                        <img src="img/cosmos.png" alt="cosmos" class="cosmos_img">
+                        <h1 class="cosmos_heading"> Om Cosmos </h1>
+                        <p class="front_p">
+                            COSMOS er en fælleseuropæisk certificering af økologisk kosmetik, som anvendes i mere end 45
+                            lande
+
+                            <ul class="cosmosliste">
+                                <li class="cosmos_p"> På COSMOS-mærkede produkter oplyses andelen af naturlige
+                                    ingredienser og økologi.
+                                </li>
+                                <br>
+                                <li class="cosmos_p">For at opnå COSMOS Organic-mærket skal mindst 95 % af
+                                    ingredienserne være naturlige
+                                </li>
+                                <br>
+                                <li class="cosmos_p">Desuden skal mindst 10 % af ingredienserne i produkter, der vaskes
+                                    af, og mindst 20
+                                    % af ingredienserne i produkter, der ikke vaskes af, være økologiske.</li>
+                                <br>
+                                <li class="cosmos_p">Endelig skal mindst 95 % af de naturlige olier og ekstrakter i
+                                    produktet være
+                                    økologiske.</li>
+                            </ul>
+
+                            COSMOS er desuden garanti for, at ingredienser er dyrket ansvarligt og med respekt for
+                            miljøet.
+                            <br>
+                            <br>
+
+                            Læs mere om COSMOS på www.cosmos-standard.org
+                        </p>
+                        <!-- KILDE: https://www.rudolphcare.com/da/baeredygtighed/certificeringer/  -->
+
+                    </a>
+                </div>
+
+
+
+                <div class="solserie_card">
+                    <a href="#" class="editorial_link">
+                        <img src="img/svanemærket.avif" alt="svanemærket" class="svane_img">
+                        <h1 class="solserie_heading">Om Svanemærket </h1>
+                        <p class="front_p">
+                            Svanemærket er det officielle nordiske miljømærke. Målet med mærkningen er at mindske
+                            belastning af miljøet, til gavn for mennesker, dyr og jordens ressourcer.
+                            <br>
+                            Svanemærket ser på helheden.
+                            Fra råvarer til produktion, brug, bortskaffelse og
+                            recirkulering. Når du vælger et svanemærket produkt, er du med til at drive
+                            produktudviklingen i en mere bæredygtig retning.
+                            <br>
+                            For at opnå
+                            certificeringen skal et produkt opfylde en række strenge krav i alle relevante faser af dets
+                            livscyklus, herunder til de evt. anvendte kemikalier.
+                            <br>
+
+                            <ul class="svaneliste">
+                                <li class="sm_liste"> Svanemærkede hud- og hårplejeprodukter er fri for MI og andre
+                                    konserveringsmidler,
+                                    <br> der er klassificeret som allergifremkaldende.</li>
+                                <br>
+
+                                <li class="sm_liste">De er fri for alle komponenter på EU’s liste over stoffer, der er
+                                    mistænkt for at
+                                    være
+                                    hormonforstyrrende og fri for mikroplast.</li>
+                                <br>
+                                <li class="sm_liste">Der stilles desuden skrappe krav til emballagen på plejeprodukter,
+                                    ift. mængde og type emballage.</li>
+                            </ul>
+                            Læs mere om Miljømærket Svanen på www.ecolabel.dk
+                        </p>
+                        <!-- KILDE: https://www.rudolphcare.com/da/baeredygtighed/certificeringer/  -->
+
+                    </a>
+                </div>
+
+
+                <div class="baeredygtig_card">
+                    <a href="#" class="editorial_link">
+                        <img src="img/Certified.png" alt="solcreme" class="baeredygtig_img">
+                        <h1 class="baeredygtig_heading">Bæredygtighed - Certificeringer </h1>
+                        <p class="front_t">
+                            Rudolph Cares solserie er meget mere end effektiv solbeskyttelse; det er det solsikre valg,
+                            angår luksuriøs, nærende pleje til ansigtet og kroppen,
+                            koralvenlighed og sanselige sommerfornemmelser. <br> <br>
+                            Vores to kernecertificeringer, krydset mellem den nordiske miljøcertificering Svanemærket og
+                            den internationalt anerkendte, økologiske certificering, COSMOS, finder du på mange af vores
+                            produkter.
+                            Blandt andre certificeringer.
+                            <br><br>
+                            Lær dem alle at kende her på siden.
+                        </p>
+                    </a>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--- FOOTER-->
+    <footer>
+
+        <div class="footer_card">
+            <h4 class="footer_card_header">Info</h4>
+            Job
+            <br>
+            Handelsbetingelser
+            <br>
+            Cookie- & privatlivspolitik
+            <br>
+            Find forhandler
+            <br>
+            Signaturbehandlinger
+            <br>
+            Nyhedsbrev
+
+        </div>
+
+
+        <div class="footer_card">
+            <h4 class="footer_card_header">Kundeservice</h4>
+            Kontakt
+            <br>
+            Levering & retur
+            <br>
+            Spørgsmål & svar
+            <br>
+            Image bank: Presse
+            <br>
+            Image bank: Forhandlere
+
+
+        </div>
+
+
+        <div class="footer_card">
+            <h4 class="footer_card_header">Sociale medier</h4>
+            Instagram
+            <br>
+            Instagram: Rudolph Care Sun
+            <br>
+            Facebook
+            <br>
+            Youtube
+        </div>
+
+        <div class="footer_card">
+            <h4 class="footer_card_header">Kontakt os</h4>
+            <p class="footer_link">
+                <a href="#" class="footer_link">+45 53571123</a>
+            </p>
+            <p class="footer_link">
+                <a href="mailto:viby@gladforvin.dk" class="footer_link">kontakt@rudolphcare.com</a>
+            </p>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

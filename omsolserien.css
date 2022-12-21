@@ -1,0 +1,142 @@
+.headline {
+    text-align: center;
+}
+
+.editorial {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.quality_flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 10px auto 60px;
+}
+
+.solserie_card {
+    text-align: center;
+    padding: 15px;
+    background-color: #e8b65ac5;
+    max-width: 85%;
+}
+
+.solserie_heading {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.solserie_img {
+    max-width: 100%;
+    float: left;
+}
+
+.editorial_link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.front_p {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ----- bæredygtighed  */
+.baeredygtig_card {
+    text-align: left;
+    padding: 15px;
+    background-color: #658b64ab;
+    max-width: 85%;
+}
+
+.baeredygtig_heading {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.baeredygtig_img {
+    max-width: 100%;
+    float: right;
+}
+
+.baeredygtig_link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.front_p {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 18px;
+}
+
+.button-5 {
+    margin: 20px;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: oblique;
+    height: 45px;
+    width: 185px;
+    justify-content: center;
+    line-height: 10px;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-5:focus {
+    color: #171e29;
+}
+
+.button-5:hover {
+    border-color: #E8B75A;
+    color: #E8B75A;
+    fill: #E8B75A;
+}
+
+
+
+/*=============================================================================================
+    =========================================   TABLET   ==========================================
+    =============================================================================================*/
+
+@media screen and (min-width: 900px) {
+    .solserie_img {
+        max-width: 40%;
+        float: left;
+    }
+
+    .baeredygtig_img {
+        max-width: 40%;
+        float: right;
+    }
+}
+
+
+
+
+/*=============================================================================================
+        ========================================   COMPUTER   =========================================
+        =============================================================================================*/
+
+@media screen and (min-width: 1200px) {}

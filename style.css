@@ -1,0 +1,725 @@
+/* Basic reset */
+:after:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*-----  MOBIL   -----*/
+
+
+/* ------ Farve koder - hentes med: var(--navn) */
+:root {
+    --gulbeige: #F2E7D1;
+    --brun: #9A5336;
+    --gron: #658B64;
+    --blaa: #89ADD0;
+    --knaekkethvid: #F3F0E3;
+    --gul: #E8B75A;
+}
+
+/*-----BODY-----*/
+body {
+    font-family: Helvetica, sans-serif;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #F2E7D1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/* -----NAV 1------ */
+
+
+.nav_item {
+    display: none;
+}
+
+nav {
+    background-color: var(--gulbeige);
+    height: 6rem;
+    padding: 0px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    /* fade in checked menu */
+}
+
+/* ----- NAV 1 SLUT ----- */
+
+/*------- BURGERMENU - https://alvarotrigo.com/blog/hamburger-menu-css/ (nr. 11)--------*/
+
+nav .m-menu__checkbox {
+    display: none;
+
+}
+
+nav label.m-menu__toggle {
+    cursor: pointer;
+}
+
+nav .m-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 450px;
+    width: calc(100vw - 30px);
+    height: 100%;
+    -moz-transform: translate3d(-450px, 0, 0);
+    -o-transform: translate3d(-450px, 0, 0);
+    -ms-transform: translate3d(-450px, 0, 0);
+    -webkit-transform: translate3d(-450px, 0, 0);
+    transform: translate3d(-450px, 0, 0);
+    -moz-transition: transform 0.35s;
+    -o-transition: transform 0.35s;
+    -webkit-transition: transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 1;
+    overflow: hidden;
+    background-color: var(--gul);
+
+}
+
+
+nav .m-menu__overlay {
+    background-color: rgba(103, 103, 103, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+nav .m-menu__header {
+    padding: 0 16px;
+    height: 50px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+nav .m-menu__header span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: oblique;
+    text-align: center;
+    width: 100%;
+}
+
+nav .m-menu .m-menu {
+    -moz-transform: translate3d(480px, 0, 0);
+    -o-transform: translate3d(480px, 0, 0);
+    -ms-transform: translate3d(480px, 0, 0);
+    -webkit-transform: translate3d(480px, 0, 0);
+    transform: translate3d(480px, 0, 0);
+}
+
+nav .m-menu ul {
+    height: 100%;
+    overflow-y: auto;
+}
+
+nav .m-menu ul li a,
+nav .m-menu ul li label {
+    display: block;
+    text-align: left;
+    padding: 0 15px;
+    line-height: 47px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+    position: relative;
+}
+
+#a_menu {
+    padding-left: 0px
+}
+
+
+nav .m-menu ul li label.a-label__chevron::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-color: #333;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -5px;
+    right: 16px;
+}
+
+nav .m-menu ul li .-invisible {
+    border-bottom: 0;
+}
+
+nav .m-menu .m-menu label.m-menu__toggle {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 0;
+    padding: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+nav .m-menu__checkbox:checked~.m-menu__overlay {
+    display: block;
+}
+
+nav .m-menu__checkbox:checked~.m-menu {
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+svg {
+    stroke: black;
+}
+
+/* ------ BURGER MENU SLUT ----- */
+
+
+/*-----HEADER EKSKLUSIV MENUER -----*/
+
+.logo {
+    margin: 0;
+    padding-top: 0%;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ----- BORDER ----- */
+.border {
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+/*------------FORSIDEBILLEDE MED TEKST---------------------------*/
+
+.front_cover {
+    margin: 20px auto;
+    width: 80%;
+
+}
+
+.front_cover_flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 10px auto 60px;
+}
+
+.front_cover_card {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--knaekkethvid);
+    max-width: 85%;
+    border-radius: 5%;
+    border: 2px solid var(--gul);
+    line-height: 1.6;
+
+}
+
+.front_cover_heading {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.front_cover_img {
+    max-width: 100%;
+    float: right;
+    border-radius: 5%;
+}
+
+.front_cover_link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.front_cover_p {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 18px;
+}
+
+
+
+
+
+/* #a_forside_cover :hover {
+    text-decoration: none;
+    color: blue;
+} */
+
+/*------------FORSIDEBILLEDE MED TEKST SLUT---------------------------*/
+
+/*----- DROPDOWN MENU (skal skjules på mobil)------*/
+.menu_items {
+    display: none;
+}
+
+.menu_bar {
+    height: 0px;
+
+}
+
+/* ----- Dropdown menu SLUT --------*/
+
+/* -----FILTRE KNAP ------*/
+.filtre {
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5%;
+    padding: 1rem;
+}
+
+.underkategorier {
+    font-family: Helvetica, sans-serif;
+    background-color: #89ADD0;
+}
+
+/*------------CONTENT-------------*/
+
+.forside_section {
+    background-color: #e8b65ac5;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1.5%;
+    border-radius: 10px;
+
+}
+
+.forside_section_header {
+    padding-left: 2.5%;
+    padding-bottom: 2.5%;
+    margin-block-end: 0px;
+}
+
+
+
+.m_produkt {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 3rem;
+    padding-top: 1rem;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+
+.mp_row {
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.mp_link {
+    text-decoration: none;
+    color: var(--sort);
+}
+
+
+
+.mp_navn {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 2rem;
+}
+
+.f_contentimg {
+    width: 100%;
+    display: block;
+    display: flex;
+
+}
+
+
+
+.forside_section_p {
+    display: none;
+}
+
+/* ----- KØB KNAP ----- */
+/* CSS */
+/*----- link: https://getcssscan.com/css-buttons-examples KNAP 59 */
+.button-59 {
+    margin: 10px;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: oblique;
+    height: 35px;
+    width: 185px;
+    justify-content: center;
+    line-height: 10px;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-59:focus {
+    color: #171e29;
+}
+
+.button-59:hover {
+    border-color: var(--blaa);
+    color: var(--blaa);
+    fill: var(--blaa);
+}
+
+.button-59:active {
+    border-color: var(--blaa);
+    color: var(--blaa);
+    fill: var(--blaa);
+}
+
+/* ----FOOTER ----- */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+    background-color: var(--gulbeige);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-top: 2px solid black;
+}
+
+.footer_card {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2E7D1;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+    opacity: 0.7;
+    margin: 25px;
+    padding: 5px;
+    align-items: center;
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    line-height: 1.6;
+
+}
+
+.footer_card_header {
+    color: var(--guld);
+    padding: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+
+}
+
+
+
+/* alle ikoner skal være guld (virker ikke med class, så de har hver deres id) */
+#ikon_search,
+#ikon_shoppingbag,
+#ikon_locationon_footer,
+#ikon_locationon_top,
+#ikon_locationon_content,
+#ikon_mail,
+#ikon_call {
+    padding-left: 5px;
+}
+
+
+.footer_link {
+    text-decoration: none;
+    padding: 5px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: black;
+}
+
+
+
+
+
+/*=============================================================================================
+=========================================   TABLET   ==========================================
+=============================================================================================*/
+
+@media screen and (min-width: 900px) {
+
+    .forside_section {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .forside_section_p {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5%;
+    }
+
+    .nav_ikoner {
+        margin: 2%;
+    }
+
+
+    .navbar1 {
+        overflow: hidden;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 2px 2px;
+    }
+
+    .nav_item {
+        display: block;
+    }
+
+    .navbar1 a {
+        font-size: 12px;
+        color: black;
+        text-align: center;
+        padding: 2px 2px;
+        text-decoration: none;
+    }
+
+
+    .navbar1 a {
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        padding: 6px 6px;
+        text-decoration: none;
+    }
+
+    .navbar1 a:hover {
+        background-color: var(--brun);
+    }
+
+    /* ----- FRONT COVER ------ */
+    .front_cover_img {
+        width: 30%;
+
+    }
+
+    .front_cover_card {
+        border-radius: 0.9%;
+    }
+
+    /* ---- CONTENT ---- */
+    .mp_navn {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 1.2rem;
+    }
+
+
+
+    /*------FOOTER----------*/
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    .footer_card {
+        width: 16rem;
+    }
+
+
+
+
+}
+
+/*=============================================================================================
+========================================   COMPUTER   =========================================
+=============================================================================================*/
+
+@media screen and (min-width: 1200px) {
+
+    /*-----------------------------------------------------
+HEADER
+-----------------------------------------------------*/
+
+
+    .header_card {
+        display: none;
+    }
+
+    .logo {
+        padding-right: 8%;
+    }
+
+    /*--------------DROPDOWN MENUBAR ----*/
+    .menu_bar {
+        background-color: var(--gulbeige);
+        height: 1rem;
+
+
+    }
+
+    .menu_items {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu_items {
+        text-decoration: none;
+        color: var(--brun);
+        padding-right: 1.8rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .menu_item:hover {
+        color: var(--brun);
+    }
+
+
+    /* DROP DOWN */
+
+    .dropbutton {
+        background-color: var(--gulbeige);
+        color: black;
+        padding: 8px;
+        font-size: 1.15rem;
+        border: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .dropbutton:hover {
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        color: var(--brun);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .drop_punkter {
+        display: none;
+        position: absolute;
+        background-color: var(--gulbeige);
+        min-width: 40%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .drop_punkter a {
+        color: var(--brun);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .drop_punkter a:hover {
+        /*hover på dropdown punkterne*/
+        background-color: var(--brun);
+        color: var(--gul);
+    }
+
+    .dropdown:hover .drop_punkter {
+        display: block;
+        /*punkterne skal stå under hinanden*/
+    }
+
+    .dropdown:hover .dropbutton {
+        /*hover på menupunktet*/
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .dropdown_ekstra_bue:hover .dropbutton {
+        border-bottom-right-radius: 10px;
+    }
+
+    .active_dropdown {
+        background-color: var(--blaa);
+        color: var(--gulbeige);
+    }
+
+    .m-menu__toggle {
+        /* burgermenu skal ikke vises på pc */
+        display: none;
+    }
+
+
+  
+
+    /*------------CONTENT-------------*/
+
+    .m_produkt {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 3rem;
+        padding-top: 1rem;
+        padding-right: 7%;
+        padding-left: 1%;
+    }
+
+    .page_footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+
+}

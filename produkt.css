@@ -1,0 +1,282 @@
+/* ----- TILBAGE KNAP ------ */
+.back_link {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    height: 1rem;
+}
+
+/*---------------- OVERSKRIFT SECTION ---------------*/
+.overskrift1 {
+    text-align: center;
+    padding-top: 2%;
+}
+
+
+.sol_img {
+    margin-right: 5%;
+    margin-bottom: 2.5%;
+    padding-top: 2%;
+}
+
+.pris {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.button-21 {
+    align-items: center;
+    appearance: none;
+    background-color: #F3F0E3;
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 22px;
+    border-color: #E8B75A;
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1.5rem;
+    height: 3rem;
+    justify-content: center;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 10px 25px;
+    /* padding i selve knappen */
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    font-style: oblique;
+}
+
+.button-21:hover {
+    background-color: #658B64;
+    color: #E8B75A;
+    border: none;
+}
+
+.button-21 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 100%;
+
+}
+
+
+
+/*---------------- INFORMATION/BESKRIVELSE SECTION ---------------*/
+.overskrift_r {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: left;
+    padding-top: 2%;
+}
+
+.produkt_variants .variants {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.strong .span {
+    margin-top: 0;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.produkt_variants a {
+    position: relative;
+    text-decoration: none;
+    padding-left: 2px;
+    color: black;
+}
+
+.produkt_variants ul {
+    list-style: none;
+    padding-left: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.lang-tekst {
+    line-height: 160%;
+    margin-right: 2.5%;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+}
+
+.godtil {
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.egenskabn {
+    background-color: #F2E7D1;
+    margin-right: 2.5px;
+    font-size: 22px;
+    border: none;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+.egenskab {
+    position: relative;
+    display: inline-block;
+}
+
+.egenskab-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: Helvetica, sans-serif;
+    font-style: oblique;
+    line-height: 1.6;
+}
+
+.egenskab-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.egenskab:hover .egenskab-content {
+    display: block;
+}
+
+/* ------ certificeringbilleder ------ */
+.certi_txt {
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.certi {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.certi_img_s {
+    width: 90%;
+}
+
+.certi_img {
+    width: 60%;
+}
+
+
+/*=============================================================================================
+    =========================================   TABLET   ==========================================
+    =============================================================================================*/
+
+@media screen and (min-width: 900px) {
+
+    /* ----- TILBAGE KNAP ------ */
+    .tilbage {
+        margin-top: 20px;
+    }
+
+
+    .overskrift1 {
+        text-align: right;
+        padding-top: 3%;
+        margin-right: 2.5%;
+        width: 69%;
+    }
+
+    .vin_row {
+        justify-content: center;
+        display: flex;
+    }
+
+    .pris {
+        text-align: center;
+    }
+
+
+    .produkt_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2.5%;
+
+    }
+
+    .produkt_inner_row {
+        width: 50%;
+    }
+
+    .pro_info {
+        width: 50%;
+        padding-top: 0%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+
+    .sol_img {
+        margin-left: 2%;
+        margin-right: 2%;
+        border-radius: 12px;
+        width: 80%;
+    }
+
+    .egenskab-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 660px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        font-family: Helvetica, sans-serif;
+        font-style: oblique;
+    }
+
+    .button-59 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 3rem;
+    }
+
+    .certi_img_s {
+        width: 70%;
+    }
+
+    .certi_img {
+        width: 40%;
+    }
+
+}
+
+/*=============================================================================================
+    ========================================   COMPUTER   =========================================
+    =============================================================================================*/
+
+@media screen and (min-width: 1200px) {}

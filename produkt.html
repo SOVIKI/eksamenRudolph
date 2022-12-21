@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produkt.css">
+    <title> Om Sol serien | Rudolph Care </title>
+
+    <!-- Tab ikon -->
+    <link rel="icon" type="image/x-icon" href="img/tab_ikon.png">
+
+    <!-- Fonte og ikoner (findes på google: google material icon) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66a5a04b45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!---BURGERMENU  https://alvarotrigo.com/blog/hamburger-menu-css/ (nr. 11) -->
+
+    <header>
+        <!---Burger streger-->
+
+        <nav class="burgermenu">
+            <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+            <label class="m-menu__toggle" for="menu">
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="butt"
+                    stroke-linejoin="arcs">
+                    <line x1="2" y1="12" x2="21" y2="12"></line>
+                    <line x1="2" y1="6" x2="21" y2="6"></line>
+                </svg>
+            </label>
+            <label class="m-menu__overlay" for="menu"></label>
+
+            <!--- header til pc -->
+
+            <div class="nav_item">
+                <p class="navbar1">
+                    <a href="#">Shop</a>
+                    <a href="#">Om</a>
+                    <a href="#">Bæredygtighed</a>
+                    <a href="#">The Care Journal</a>
+                </p>
+            </div>
+
+            <!---google ikoner i navbar-->
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="logo" class="logo"></a>
+
+            <div class="nav_ikoner">
+                <i class="material-icons" id="ikon_search">search</i>
+                <i class="material-icons" id="ikon_favorite">favorite</i>
+                <i class="material-icons" id="ikon_shoppingbag">shopping_bag</i>
+            </div>
+
+
+            <!--- Kryds i menu -->
+            <div class="m-menu">
+                <div class="m-menu__header">
+                    <label class="m-menu__toggle" for="menu">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                            stroke-linecap="butt" stroke-linejoin="arcs">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </label>
+                    <span></span>
+                </div>
+
+
+
+
+                <!---SEKTION 1-->
+                <ul>
+                    <li>
+                        <label class="a-label__chevron" for="item-1">Ansigt</label>
+                        <input type="checkbox" id="item-1" name="item-1" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-1">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span>Ansigt</span>
+                            </div>
+                            <ul>
+                                <li><label>Lotion</label></li>
+                                <li>
+                                    <label><a href="#" id="a_menu">Sticks</a></label>
+                                </li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+
+
+                    <!--- SEKTION 2 -->
+
+                    <li>
+                        <label class="a-label__chevron" for="item-2">Kroppen</label>
+                        <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-2">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span>Kroppen</span>
+                            </div>
+                            <ul>
+
+                                <li><label>Lotion</label></li>
+                                <li><label>Olie</label></li>
+                                <li><label>Sets</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!--- SEKTION 3-->
+                    <li>
+                        <label class="a-label__chevron" for="item-3">Til børn & gravide</label>
+                        <input type="checkbox" id="item-3" name="item-3" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-3">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span>Til børn & gravide</span>
+                            </div>
+                            <ul>
+                                <li><label>Lotion</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <!--- SEKTION 4-->
+                    <li>
+                        <label class="a-label__chevron" for="item-4">Til ham</label>
+                        <input type="checkbox" id="item-4" name="item-4" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-4">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span> Til ham </span> <!-- HJÆLP -->
+                                <!-- Lav om til at have en Alle knap i stedet for kategoti href -->
+                            </div>
+                            <ul>
+                                <li><label>Lotion</label></li>
+                                <li><label>Olie</label></li>
+                                <li><label>Vidste du ...</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <!--- SEKTION 5 -->
+                    <li>
+                        <label class="a-label__chevron" for="item-5">Aftersun</label>
+                        <input type="checkbox" id="item-5" name="item-5" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-5">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span> Aftersun</span>
+                            </div>
+                            <ul>
+                                <li><label>Aftersun Shimmer Sorbert</label></li>
+                                <li><label>Aftersun Soothing Sorbert</label></li>
+                                <li><label>Repair Spray Aftersun</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+
+
+                    <!---  SEKTION 6 -->
+                    <li>
+                        <label class="a-label__chevron" for="item-6">Accessories</label>
+                        <input type="checkbox" id="item-6" name="item-6" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-6">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span> Accessories</span>
+                            </div>
+                            <ul>
+                                <li><label>Håndklæde</label></li>
+                                <li><label>Sandaler</label></li>
+                                <li><label>Tasker</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!--- SEKTION 7 -->
+                    <li>
+                        <label class="a-label__chevron" for="item-7">Om solserien</label>
+                        <input type="checkbox" id="item-7" name="item-7" class="m-menu__checkbox">
+                        <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-6">
+                                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                        stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                        <path d="M19 12H6M12 5l-7 7 7 7" />
+                                    </svg>
+                                </label>
+                                <span> Som solserien</span>
+                            </div>
+                            <ul>
+                                <li><label> <a href="solserien.html" id="a_menu"> Om solserien </a></label></li>
+                                <li><label>Bæredygdighed - Certificeringer</label></li>
+                                <li><label>FAQ</label></li>
+                                <div class="m-menu">
+                                    <div class="m-menu__header"></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="border"></div>
+
+        <!--- DROPDOWN MENU (https://www.w3schools.com/howto/howto_css_dropdown.asp) -->
+
+        <nav class="menu_bar">
+
+            <!-- Menu items -->
+            <div class="menu_items">
+
+                <div class="dropdown">
+                    <form action="#" class="menu_item"><button class="dropbutton">Ansigt</button></form>
+                    <div class="drop_punkter">
+                        <a href="#">Lotion</a>
+                        <a href="#">Sticks</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <form action="#" class="menu_item"><button class="dropbutton">Kroppen</button></form>
+                    <div class="drop_punkter">
+                        <a href="#">Lotion</a>
+                        <a href="#">Olie</a>
+                        <a href="#">Sets</a>
+                    </div>
+                </div>
+
+                <div class="dropdown dropdown_ekstra_bue">
+                    <form action="#" class="menu_item"><button class="dropbutton">Til børn & gravide</button></form>
+                    <div class="drop_punkter">
+                        <a href="#">Lotion</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <form action="kategori.html" class="menu_item"><button class="dropbutton">Til ham </button>
+                    </form>
+                    <div class="drop_punkter">
+                        <a href="#">Lotion</a>
+                        <a href="#">Olie</a>
+                        <a href="#">Vidste du...</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <form action="#" class="menu_item dropdown_ekstra_bue"><button class="dropbutton">Aftersun</button>
+                    </form>
+                    <div class="drop_punkter">
+                        <a href="#">Aftersun Shimmer Sorbert</a>
+                        <a href="#">Aftersun Soothing Sorbert</a>
+                        <a href="#">Repair Spray Aftersun</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <form action="#" class="menu_item"><button class="dropbutton">Accessories</button></form>
+                    <div class="drop_punkter">
+                        <a href="#">Håndklæde</a>
+                        <a href="#">Sandaler</a>
+                        <a href="#">Tasker</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <form action="solserien.html" class="menu_item"><button class="dropbutton">Om solserien</button>
+                    </form>
+                    <div class="drop_punkter">
+                        <a href="#">Solserien</a>
+                        <a href="certificering.html">Bæredygdighed - Certificeringer</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <!---TILBAGE KNAP -->
+    <div class="tilbage">
+        <a href="kategori.html" class="back_link">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <!--- overskrift -->
+    <section class="overskrift1">
+
+        <h1> Sun Body Lotion SPF 30</h1>
+    </section>
+
+    <div class="produkt_row">
+        <div class="produkt_inner_row">
+            <div class="vin_row">
+                <img src="img/body30.png" alt="sol" class="sol_img">
+            </div>
+            <!--- BUTTON KNAP https://getcssscan.com/css-buttons-examples knap 21 -->
+            <div class="info_container">
+                <button class="button-21 button-211">
+                    <a href="certificering.html">
+                        <i class="fa fa-lightbulb-o"></i> Vidste du...
+                    </a>
+                </button>
+            </div>
+        </div>
+        <!--- Informaiton -->
+
+        <section class="overskrift_r pro_info">
+            <p class="lang-tekst">
+                Sun Body Lotion SPF 30 er en beskyttende, beroligende og vandafvisende lotion, der beskytter dig
+                effektivt mod solens skadelige UVA- og UVB-stråler.
+                Sun Body Lotion er nem at fordele og hverken klistrer, fedter eller hvidter. En lotion, der er rig
+                på
+                naturlige, økologiske ingredienser,
+                som nærer, fugter og plejer din hud i solen.
+            </p>
+
+            <div>
+                <button class="button-59">KØB</button>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+
+            <nav id="variants" class="produkt_variants">
+                <strong> Vælg størrelse </strong>
+                <ul>
+                    <li>
+                        <span>
+                            <a href="#">400 ml</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="#">150 ml</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="#">75 ml</a>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="egenskab">
+                <button class="egenskabn"> <i class="fa-brands fa-pagelines"></i> Egenskaber </button>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div class="egenskab-content">
+                    <a href="#">UVA & UVB-beskyttelse <br> Nærende pleje</a>
+                    <a href="#">
+                        <h4>Ingredientsliste</h4>
+                        Aqua, Aloe Barbadensis Leaf Extract* (aloe vera),
+                        Dibutyl Adipate, Diethylamino Hydroxybenzoyl Hexyl Benzoate (solfilter),
+                        Ethylhexyl Triazone (solfilter), Glycerin, Glyceryl Stearate,
+                        Anthemis Nobilis Flower Water* (kamille), Diethylhexyl Butamido Triazone (solfilter),
+                        Brassica Campestris Seed Oil* (rapsolie), Brassica Napus Seed Oil* (rapsolie), Ceteareth-20,
+                        Tocopheryl Acetate (Vitamin E), Cucumis Sativus Fruit Extract* (agurkeekstrakt),
+                        Hippophae Rhamnoides Fruit Oil* (havtornolie), Ceteareth-12, Cetearyl Alcohol, Cetyl
+                        Palmitate,
+                        Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Parfum (naturlig), Sodium Hydroxide,
+                        Citric Acid, Sodium Benzoate, Potassium Sorbate, Phenoxyethanol, Benzoic Acid, Dehydroacetic
+                        Acid
+                        <br>
+                        <br>
+                        *Ingredients from organic farming
+
+                        70% natural origin of total
+                        21% of the total ingredients are from organic farming
+                        <!-- KILLDE: https://www.rudolphcare.com/da/produkt/sun-body-lotion-spf-30/  -->
+                    </a>
+                </div>
+            </div>
+
+
+
+            <h2 class="lang-tekst godtil">
+                <i class="fa-brands fa-drupal"></i> Særlig god til alle hudtyper
+            </h2>
+
+            <h2 class="lang-teks certi_txt">
+                <i class="fa-solid fa-hand-holding-heart"></i> Certificeringer
+                <dl class="certi">
+                    <img class="certi_img_s" src="img/svanemærket.avif" alt="svanemærket">
+                    <img class="certi_img" src="img/vegan.jpg" alt="vegan">
+                </dl>
+            </h2>
+
+
+        </section>
+    </div>
+
+    <!--- FOOTER -->
+    <footer>
+
+        <div class="footer_card">
+            <h4 class="footer_card_header">Info</h4>
+            Job
+            <br>
+            Handelsbetingelser
+            <br>
+            Cookie- & privatlivspolitik
+            <br>
+            Find forhandler
+            <br>
+            Signaturbehandlinger
+            <br>
+            Nyhedsbrev
+
+        </div>
+
+
+        <div class="footer_card">
+            <h4 class="footer_card_header">Kundeservice</h4>
+            Kontakt
+            <br>
+            Levering & retur
+            <br>
+            Spørgsmål & svar
+            <br>
+            Image bank: Presse
+            <br>
+            Image bank: Forhandlere
+
+
+        </div>
+
+
+        <div class="footer_card">
+            <h4 class="footer_card_header">Sociale medier</h4>
+            Instagram
+            <br>
+            Instagram: Rudolph Care Sun
+            <br>
+            Facebook
+            <br>
+            Youtube
+        </div>
+
+        <div class="footer_card">
+            <h4 class="footer_card_header">Kontakt os</h4>
+            <p class="footer_link">
+                <a href="#" class="footer_link">+45 53571123</a>
+            </p>
+            <p class="footer_link">
+                <a href="#" class="footer_link">kontakt@rudolphcare.com</a>
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
